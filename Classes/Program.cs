@@ -4,7 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var jeep = new Car();
+
+            jeep.Make = "Jeep";
+            jeep.Model = "Grand Cherokee";
+            jeep.Year = 2024;
+
+            // Use overridden ToString() method
+            Console.WriteLine(jeep);
         }
     }
 }
